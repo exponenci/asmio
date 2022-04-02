@@ -40,7 +40,7 @@ int main() {
         free_mem(data);
         close(fd);
     }
-    {   //    some samples of 32-bit integers input/output functions    //
+    {   //    some samples of 32-bit integer input/output functions    //
         int fd = open("samples/read_int.txt", O_RDONLY);
         dup2(fd, 0);
         uint32_t unsigned_value = readu32();

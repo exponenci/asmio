@@ -21,6 +21,6 @@ main:
     push %esi
     call free_mem
     add $0x4, %esp
-	mov $SYS_exit, %eax      // SYS_exit = 1
-	mov $0x0, %ebx
-	int $0x80
+    mov $SYS_exit, %eax      // SYS_exit = 1
+    mov $0x0, %ebx
+    int $0x80
